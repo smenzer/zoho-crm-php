@@ -15,18 +15,21 @@ It aims to cover the whole API (every module and method), while providing a grea
 
 The recommended way to install this package is through [Composer](https://getcomposer.org).
 
-Edit your `composer.json` file:
+Make sure to add the VCS repository in your `composer.json` file:
+
+```json
+"repositories": [{
+    "type": "vcs",
+    "url": "https://github.com/smenzer/zoho-crm-php"
+}]
+```
+
+Then add the package in the `require` section:
 
 ```json
 "require": {
-    "tristanjahier/zoho-crm-php": "^0.2"
+    "smenzer/zoho-crm-php": "^0.3"
 }
-```
-
-or simply run this command:
-
-```
-composer require tristanjahier/zoho-crm-php
 ```
 
 ## Get started
